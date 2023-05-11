@@ -1,0 +1,121 @@
+/* below css rules are for all html elements */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+   box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #A1C4FD , #C2E9FB);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 500px;
+  /* min-height not needed because it'll grow with addition of task */
+  background-color: #ffffff;
+  margin: 100px auto 30px;
+  /* added margin auto to bring to-do list to center */
+  padding: 40px 30px 60px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.todo-app h2 {
+  color: #04286c;
+  display: flex; /* becuase we have to align item and text*/
+  align-items: center;
+  justify-content: center;
+  /* the above 2 property align the heading to center */
+  margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eceef1;
+  border-radius: 10px;
+  padding: auto auto;
+  margin-bottom: 20px;
+}
+.row span img {
+  padding: 2px;
+  width: 25px;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+  /* to occupy the complete width of row */
+  background: transparent;
+  padding: 10px;
+  font-size: 1.2rem;
+  outline: none;
+  /* to hide the outline boundary separating the input box from button */
+}
+
+/* css rules for the button */
+button {
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.3rem;
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+ul li {
+  border-radius: 10px;
+  list-style: none;
+  font-size: 17px;
+  user-select: none;
+  padding: 12px 8px 12px 30px;
+  cursor: pointer;
+  position: relative;
+  /* to adjust the before image absolute position relative to the list */
+}
+
+
+
+.checked {
+  color: #555;
+  text-decoration-color: rgb(255, 0, 0);
+  text-decoration-line: line-through;
+}
+
+
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 1.8rem;
+  height: 1.8rem;
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 30px;
+  text-align: center;
+}
+
+ul li:hover {
+  background-color: whitesmoke;
+}
+
+#count-item{
+user-select: none;
+font-size:small;
+font-weight: 100;
+font-family: sans-serif;
+color:rgb(115 115 115);
+}
